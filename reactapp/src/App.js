@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import Stopwatch from './Components/Stopwatch/Stopwatch';
+import Stopwatch from './components/Stopwatch/Stopwatch';
 
 function App() {
   return (
