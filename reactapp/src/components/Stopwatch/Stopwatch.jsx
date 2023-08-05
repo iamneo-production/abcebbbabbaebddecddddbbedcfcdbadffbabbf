@@ -37,18 +37,18 @@ const Stopwatch = () => {
   };
 
   return (
-    <div>
-      <p id="time" data-testid="time">{formatTime(time)}</p>
+    <div className="stopwatch-container">
+      <p id="time" data-testid="time" className="time">{formatTime(time)}</p>
       {timerRunning ? (
-        <div>
-          <button id="pause" data-testid="pause" onClick={handlePause}>Pause</button>
-          <button id="reset" data-testid="reset" onClick={handleReset}>Reset</button>
+        <div className="button-group">
+          <button id="pause" data-testid="pause" className="btn pause" onClick={handlePause}>Pause</button>
+          <button id="reset" data-testid="reset" className="btn reset" onClick={handleReset}>Reset</button>
         </div>
       ) : (
-        <button id="start" data-testid="start" onClick={handleStart}>Start</button>
+        <button id="start" data-testid="start" className="btn start" onClick={handleStart}>Start</button>
       )}
       {timerRunning ? null : (
-        <button id="resume" data-testid="resume" onClick={handleResume}>Resume</button>
+        <button id="resume" data-testid="resume" className="btn resume" onClick={handleResume}>Resume</button>
       )}
     </div>
   );
