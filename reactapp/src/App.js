@@ -1,14 +1,13 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import Stopwatch from './components/Stopwatch/Stopwatch';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <p style={{display:'none'}}>learn react link</p>
+    <div>
+      <h1>Stopwatch Application</h1>
       <Stopwatch />
     </div>
   );
-}
+};
 
-export default App;
+export default App;
